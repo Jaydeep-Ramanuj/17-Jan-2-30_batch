@@ -1,0 +1,40 @@
+output = document.getElementsByClassName("output")[0];
+slider = document.getElementsByClassName("input-slider")[0];
+
+let inputSize = document.getElementsByClassName("input")[0].clientHeight;
+console.log(inputSize);
+slider.style.height = inputSize + "px";
+function scrollSlider(element) {
+  slider.style.top = `${inputSize * (getChildIndex(element) - 1) + 10}px`;
+  element.style.color = "grey";
+}
+
+
+function changeBorder(element) {
+  console.log(element.innerText);
+  //   output.style.cssText = `border-style:${element.innerText}`;
+  output.style.borderStyle = element.innerText;
+  output.innerText = element.innerText;
+   output.innerText = element.innerText;
+}
+
+function getChildIndex(node) {
+  childIndex = Array.prototype.indexOf.call(node.parentNode.children, node);
+  console.log(childIndex);
+  return childIndex;
+}
+
+
+
+function changeBorder(element) {
+  console.log(element.innerText);
+  //   output.style.cssText = `border-style:${element.innerText}`;
+  output.style.borderStyle = element.innerText;
+  output.innerText = element.innerText;
+}
+
+function getChildIndex(node) {
+  childIndex = Array.prototype.indexOf.call(node.parentNode.children, node);
+  console.log(childIndex);
+  return childIndex;
+}
