@@ -15,6 +15,9 @@
           id=""
           placeholder="Enter your username"
           required
+          maxlength="20"
+          minlength="3"
+          pattern="[a-z]{5}"
         />
         <br />
         <input
@@ -23,6 +26,9 @@
           id=""
           placeholder="Enter your email"
           required
+          value="something@some.some"
+          readonly
+          disabled
         />
         <br />
         <input
@@ -31,7 +37,10 @@
           id=""
           placeholder="Enter your password"
           required
+          autocomplete="off"
         />
+        <br />
+        <input type="number" placeholder="Enter your age" min="5" max="999" />
       </fieldset>
       <fieldset>
         <legend>Other details</legend>
