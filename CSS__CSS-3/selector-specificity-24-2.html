@@ -12,12 +12,22 @@
       p {
         color: purple;
       }
+      * {
+        color: yellow;
+      }
       .para2 {
         color: blue;
+      }
+      p {
+        color: green;
       }
       #p-2 {
         color: #00fb0db5;
       }
+      .para2 {
+        color: tomato;
+      }
+
       #p-2 {
         color: brown;
       }
@@ -25,9 +35,13 @@
   </head>
   <body>
     <p>This is first p tag</p>
-    <p class="para2 something" id="p-2">This is second p tag</p>
+    <p class="para2 something" id="p-2" style="color: teal">
+      This is second p tag
+    </p>
     <p>This is third p tag</p>
     <b>This is b tag</b>
     <i>This is i tag</i>
   </body>
 </html>
+
+!important > inline > id > class > tag >universal

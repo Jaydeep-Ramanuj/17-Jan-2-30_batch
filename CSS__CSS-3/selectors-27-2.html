@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: bisque;
+        margin: 50px auto;
+      }
+      .box:hover {
+        height: 500px;
+        border-radius: 48px;
+        background-color: yellowgreen;
+        color: red;
+      }
+
+      #textbox:focus {
+        background-color: rgba(255, 0, 0, 0.193);
+      }
+      #checkbox:checked {
+        outline: 3px solid red;
+      }
+      li {
+        list-style: none;
+      }
+      li::before {
+        content: '\00BB';
+      }
+      li::after {
+        content: '\00AB';
+      }
+      #textbox::placeholder {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box</div>
+    <input type="text" placeholder="Enter your name" id="textbox" />
+    <input type="checkbox" name="" id="checkbox" />
+
+    <ul>
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+    </ul>
+  </body>
+</html>
+
+<!-- pseudo class selector
+pseudo element selector -->
