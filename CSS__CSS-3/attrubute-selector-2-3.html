@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        width: 500px;
+        height: 500px;
+        background-color: bisque;
+        padding-left: 100px;
+      }
+      .child {
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+      }
+
+      /* div[data-attribute] {
+        background-color: red;
+      } */
+      /* div[data-attribute='jaymit'] {
+        background-color: red;
+      } */
+      /* div[data-attribute~='jaymit'] {
+        background-color: red;
+      } */
+      /* div[data-attribute|='jay'] {
+        background-color: red;
+      } */
+      /* div[data-attribute^='deep'] {
+        background-color: red;
+      } */
+      div[data-attribute$='mit'] {
+        background-color: red;
+      }
+      /* div[data-attribute*='jay'] {
+        background-color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child" data-attribute="jay">1</div>
+      <div class="child" data-attribute="jaymit">2</div>
+      <div class="child" data-attribute="jay-mit">3</div>
+      <div class="child" data-attribute="jay mit">4</div>
+      <div class="child" data-attribute="jaymit-mit">5</div>
+      <div class="child" data-attribute="jaydeep">6</div>
+      <div class="child" data-attribute="">7</div>
+      <div class="child">8</div>
+      <div class="child" data-attribute="deep">9</div>
+      <div class="child" data-attribute="jaydeepmit">10</div>
+    </div>
+  </body>
+</html>
+
+<!-- Universal * -->
+<!-- tag -->
+<!-- class. -->
+<!-- id #-->
+<!-- child > -->
+<!-- descendent  -->
+<!-- adjacent sibling selector + -->
+<!-- general sibling selector ~ -->
+<!-- nth-child() -->
+<!-- attribute selector -->
