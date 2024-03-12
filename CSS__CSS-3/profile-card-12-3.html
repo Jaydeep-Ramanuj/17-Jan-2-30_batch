@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      body {
+        background-color: #2f0d30;
+      }
+      .profile-card {
+        width: 350px;
+        height: 500px;
+        border-radius: 12px;
+        margin: 50px auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .img-div {
+        padding: 10px;
+        background-color: #de5f00;
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+      img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: whitesmoke;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+      .stats {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .skills {
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .btns {
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+      .username {
+        margin-top: 5px;
+        font-size: 1.5rem;
+        color: #de5f00;
+        font-weight: 600;
+      }
+      .profession {
+        font-weight: 600;
+        color: grey;
+      }
+      .count {
+        color: #de5f00;
+        font-weight: 600;
+      }
+      .matric {
+        color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .description {
+        margin-top: 10px;
+        text-align: center;
+        color: grey;
+      }
+      .skill-tag {
+        padding: 5px 10px;
+        background-color: #de600063;
+        border-radius: 12px;
+      }
+      .follow-btn {
+        padding: 5px 10px;
+        background-color: #de5f00;
+        color: whitesmoke;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .message-btn {
+        padding: 5px 10px;
+        color: #de5f00;
+        border: 2px solid #de5f00;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="img-div">
+        <img
+          src="https://images.pexels.com/photos/2590287/pexels-photo-2590287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+
+      <div class="content">
+        <div class="username">Raju Bhaiya</div>
+        <div class="profession">FrontEnd Developer</div>
+        <div class="stats">
+          <div class="matric">
+            <div class="count">987</div>
+            Posts
+          </div>
+          <div class="matric">
+            <div class="count">2036</div>
+            Likes
+          </div>
+          <div class="matric">
+            <div class="count">63k</div>
+            Followers
+          </div>
+        </div>
+        <div class="description">
+          I'm specialize in Frontene web development. I love code and to build
+          interesting thing from my learning.
+        </div>
+        <div class="skills">
+          <div class="skill-tag">HTML</div>
+          <div class="skill-tag">CSS</div>
+          <div class="skill-tag">Javascript</div>
+          <div class="skill-tag">React</div>
+        </div>
+        <div class="btns">
+          <div class="follow-btn">Follow</div>
+          <div class="message-btn">Message</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
