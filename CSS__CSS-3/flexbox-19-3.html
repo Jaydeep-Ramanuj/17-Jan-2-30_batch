@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        /* width: 500px; */
+        width: 500px;
+        height: 500px;
+        background-color: wheat;
+        margin: 50px auto;
+        display: flex;
+        /* flex-direction: row; */
+        /* gap: 20px; */
+        /* justify-content: space-around;
+        align-items: end; */
+        /* flex-wrap: wrap;
+        align-content: start;
+        gap: 20px; */
+        /* row-gap: 30px;
+        column-gap: 10px; */
+        /* gap: 30px 10px; */
+      }
+      .child {
+        height: 50px;
+        width: 50px;
+        background-color: yellowgreen;
+        border: 1px solid black;
+      }
+      .child:nth-child(1) {
+        flex-grow: 1;
+      }
+      .child:nth-child(2) {
+        flex-grow: 2;
+      }
+      .child:nth-child(3) {
+        flex-grow: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <!-- <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div> -->
+    </div>
+  </body>
+</html>
