@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        padding: 30px;
+        border: 1px solid black;
+        margin: 50px;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: yellowgreen;
+        border-radius: 12px;
+        transition: all 300ms;
+        margin: 0 auto;
+      }
+
+      .wrapper:hover .box {
+        /* transition-property: ; */
+
+        /* --------- */
+        /* scale */
+        /* --------- */
+
+        /* scale-x */
+        /* transform: scaleX(1); */
+        /* transform: scaleX(1.5); */
+        /* transform: scaleX(0.5); */
+
+        /* scale-y */
+        /* transform: scaleY(1); */
+        /* transform: scaleY(1.5); */
+        /* transform: scaleY(0.5); */
+
+        /* scale */
+        /* transform: scale(1); */
+        /* transform: scale(1.1); */
+        /* transform: scale(0.9); */
+        /* transform: scale(0.9, 0.6); */
+
+        /* --------- */
+        /* translate */
+        /* --------- */
+
+        /* translateX */
+        /* transform: translateX(50px); */
+        /* transform: translateX(-50px); */
+
+        /* translateY */
+        /* transform: translateY(50px); */
+        /* transform: translateY(-50px); */
+
+        /* translate */
+        /* transform: translate(50px, -30px); */
+        /* transform: translate(-10px, 30px); */
+
+        /* --------- */
+        /* rotate */
+        /* --------- */
+
+        /* rotate */
+        /* transform: rotate(45deg); */
+        /* transform: rotate(-30deg); */
+
+        /* rotateX */
+        /* transform: perspective(400px) rotateX(45deg); */
+        /* transform: perspective(400px) rotateX(-45deg); */
+
+        /* rotateY */
+        /* transform: perspective(400px) rotateY(45deg); */
+        /* transform: perspective(400px) rotateY(180deg); */
+
+        /* --------- */
+        /* skew */
+        /* --------- */
+
+        /* skewX */
+        /* transform: skewX(10deg); */
+        /* transform: skewX(-30deg); */
+
+        /* skewY */
+        /* transform: skewY(10deg); */
+        /* transform: skewY(-10deg); */
+
+        /* skew */
+        /* transform: skew(10deg, 30deg); */
+        /* transform: skew(-10deg, 30deg); */
+
+        /* transform: scale(1.5) perspective(400px) rotateX(150deg)
+          translateY(-20px); */
+
+        transform: translateX(100px) rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
