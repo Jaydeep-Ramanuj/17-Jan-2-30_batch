@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .wrapper {
+        height: 500px;
+        border: 1px solid;
+      }
+
+      .wrapper:hover .box {
+        /* animation-play-state*/
+
+        /* animation-play-state: running; */
+        /* animation-play-state: paused; */
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        background-color: yellowgreen;
+
+        /* animation-name */
+        /* animation-name: slideBox; */
+        animation-name: slideMultiple, colorBox;
+
+        /* animation-duration */
+        animation-duration: 2000ms, 2000ms;
+
+        /* iteration count */
+        animation-iteration-count: 10, 10;
+        /* animation-iteration-count: infinite; */
+
+        /* animation-delay */
+        animation-delay: 500ms, 500ms;
+
+        /* animation-fill-mode */
+        /* animation-fill-mode: backwards; */
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: both; */
+
+        /* animation-direction: ; */
+        /* animation-direction: normal; */
+        /* animation-direction: reverse; */
+        animation-direction: alternate, alternate;
+        /* animation-direction: alternate-reverse; */
+
+        /* animation-timing-function */
+        animation-timing-function: linear, linear;
+        /* animation-timing-function: ease; */
+        /* animation-timing-function: ease-in; */
+        /* animation-timing-function: ease-out; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); */
+        /* animation-timing-function: cubic-bezier(0, 1.43, 0.86, -0.44); */
+
+        /* animation short hand */
+        /* animation: name duration timing-function delay iteration-count direction
+          fill-mode; */
+      }
+
+      @keyframes slideBox {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translate(500px, 100px);
+        }
+      }
+
+      @keyframes slideMultiple {
+        0% {
+          transform: translate(0) rotate(0);
+        }
+        25% {
+          transform: translate(500px, 100px) rotate(90deg);
+        }
+        50% {
+          transform: translate(0, 200px) rotate(180deg);
+        }
+        75% {
+          transform: translate(500px, 300px) rotate(270deg);
+        }
+        100% {
+          transform: translate(0px, 400px) rotate(360deg);
+        }
+      }
+
+      @keyframes colorBox {
+        0% {
+          background-color: burlywood;
+        }
+        25% {
+          background-color: mediumvioletred;
+        }
+        50% {
+          background-color: olive;
+        }
+        75% {
+          background-color: yellowgreen;
+        }
+        100% {
+          background-color: khaki;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

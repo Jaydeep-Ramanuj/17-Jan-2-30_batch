@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        /* width: 300px; */
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin: 100px auto;
+        animation-name: rotateBubbleLoader;
+        animation-duration: 1200ms;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+
+      .bubble {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: lightgray;
+        animation-name: bubbleLoader;
+        animation-duration: 600ms;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
+      .bubble:nth-child(1) {
+        animation-delay: 300ms;
+      }
+      .bubble:nth-child(2) {
+        animation-delay: 500ms;
+      }
+      .bubble:nth-child(3) {
+        animation-delay: 700ms;
+      }
+      .bubble:nth-child(4) {
+        background-color: skyblue;
+        animation-delay: 900ms;
+      }
+      .bubble:nth-child(5) {
+        background-color: skyblue;
+        animation-delay: 1100ms;
+      }
+      @keyframes bubbleLoader {
+        from {
+          transform: scale(1);
+          opacity: 1;
+        }
+        to {
+          transform: scale(0.2);
+          opacity: 0.2;
+        }
+      }
+
+      @keyframes rotateBubbleLoader {
+        from {
+          transform: rotate(-45deg);
+        }
+        to {
+          transform: rotate(45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+  </body>
+</html>
