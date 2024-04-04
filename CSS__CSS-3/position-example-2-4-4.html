@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .card {
+        height: 300px;
+        width: 200px;
+        border-radius: 12px;
+        background-color: lightgray;
+        margin: 100px auto;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all 300ms;
+      }
+      .avatar {
+        position: absolute;
+        top: -50px;
+        left: 50px;
+        transition: all 300ms;
+      }
+
+      .avatar img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        outline: 5px solid skyblue;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+          rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+
+      .card:hover .avatar {
+        top: -30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="avatar">
+        <img
+          src="https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        width: 500px;
+        height: 2000px;
+        background-color: bisque;
+        margin: 50px auto;
+        /* display: flex; */
+        position: relative;
+        border: 1px solid black;
+      }
+      .child {
+        height: 100px;
+        width: 100px;
+        background-color: yellowgreen;
+        border: 1px solid;
+      }
+
+      .child2 {
+        /* position: absolute; */
+        top: 50px;
+        /* bottom: 30px; */
+        left: 150px;
+        /* right: 150px; */
+      }
+
+      .child3 {
+        /* position: absolute; */
+        /* top: 100px; */
+        /* left: 50px;
+        top: 100px; */
+      }
+
+      .child1 {
+        position: fixed;
+        left: 750px;
+      }
+      .child4 {
+        position: sticky;
+        /* right: 50px; */
+        left: 300px;
+        top: 500px;
+      }
+
+      .spacer {
+        height: 1000px;
+        background-color: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child child1">Child1</div>
+      <div class="child child2">Child2</div>
+      <div class="child child3">Child3</div>
+      <div class="child child4">Child4</div>
+    </div>
+    <div class="spacer"></div>
+  </body>
+</html>
+
+<!-- positions -->
+
+<!-- static, it is default position, you can't give offset to it -->
+<!-- absolute, useful when you want to position an element  -->
+<!-- relative, useful when you want to offset an element respective of its original position -->
+
+<!-- sticky -->
+<!-- fixed -->
