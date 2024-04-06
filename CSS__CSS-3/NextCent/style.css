@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #4bb14d;
+  --text-primary-color: #4e4e4e;
+  --text-secondary-color: #929293;
+  --bg-primary-color: #fefefe;
+  --bg-secondary-color: #f3f5f9;
+  --bg-footer-color: #2b343b;
+}
+
+/* ---------Common classes-------- */
+
+.btn {
+  width: fit-content;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: whitesmoke;
+  padding: 5px 15px;
+}
+
+.title {
+  color: var(--text-primary-color);
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.desc {
+  color: var(--text-secondary-color);
+}
+
+.section-img {
+  height: 300px;
+  object-fit: cover;
+}
+/* ------------------------------- */
+
+body {
+  padding: 30px 100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-primary-color);
+}
+
+.login-btn {
+  color: var(--primary-color);
+}
+
+/* hero section */
+
+.hero-section {
+  margin-top: 50px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-section .section-content .title {
+  font-size: 60px;
+  font-weight: 600;
+}
+.hero-section .section-content .title span {
+  color: var(--primary-color);
+}
+
+.hero-section .desc {
+  margin-top: 5px;
+}
+
+.hero-section .btn {
+  margin-top: 20px;
+}
+
+/* client section */
+
+.client-section,
+.community-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-list,
+.community-card-list {
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .community section */
+
+.community-section {
+  margin-top: 50px;
+}
+
+.community-section .title {
+  width: 50%;
+  text-align: center;
+}
+
+.community-section .desc {
+  margin-top: 5px;
+}
+
+.community-card-list {
+  width: 100%;
+  gap: 40px;
+}
+
+.community-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.community-card .title {
+  width: 90%;
+}
+
+.community-card .desc {
+}
