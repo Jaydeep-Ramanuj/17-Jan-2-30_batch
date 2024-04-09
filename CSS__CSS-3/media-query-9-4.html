@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 500px;
+        width: 500px;
+        background-color: yellowgreen;
+      }
+
+      @media (max-width: 499px) {
+        .box {
+          background-color: violet;
+        }
+      }
+      @media (max-width: 499px) and (orientation: landscape) {
+        .box {
+          background-color: saddlebrown;
+        }
+      }
+
+      @media (min-width: 500px) {
+        .box {
+          background-color: tomato;
+        }
+      }
+      @media (min-width: 700px) and (max-width: 992px) {
+        .box {
+          background-color: steelblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+
+<!-- <576, mobile or any small device -->
+<!-- >576 , tablets-->
+<!-- >768, small laptop/computer -->
+<!-- >992, normal laptop/computer -->
+<!-- >1200, large screen laptop/computer -->
+<!-- >1400, wide screen laptop/computer -->
