@@ -150,3 +150,20 @@ nav a {
 
 .community-card .desc {
 }
+
+/* .unlock-section */
+
+.unlock-section {
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.unlock-section .desc {
+  margin-top: 10px;
+}
+.unlock-section .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
