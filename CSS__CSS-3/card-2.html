@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #e8edef;
+        font-family: 'Poppins', sans-serif;
+      }
+      .card {
+        border-radius: 12px;
+        padding: 10px;
+        width: 300px;
+        background-color: whitesmoke;
+        color: grey;
+        margin: 50px auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+      .wrapper {
+        margin-top: 15px;
+      }
+      .chip-list {
+        display: flex;
+        gap: 15px;
+      }
+
+      .chip {
+        padding: 3px 8px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+      }
+      .title {
+        margin-top: 10px;
+        font-size: 36px;
+      }
+
+      .desc {
+        margin-top: 10px;
+      }
+      .read-more-btn {
+        width: fit-content;
+        padding: 10px 30px;
+        background-color: #dfecfe;
+        border-radius: 12px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://images.pexels.com/photos/2091351/pexels-photo-2091351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <div class="wrapper">
+        <div class="chip-list">
+          <div class="chip">Nature</div>
+          <div class="chip">Lake</div>
+        </div>
+        <div class="title">Lorem, ipsum</div>
+        <div class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi numquam
+          vero eos quas fuga odit.
+        </div>
+        <div class="read-more-btn">Read more</div>
+      </div>
+    </div>
+  </body>
+</html>
