@@ -1,0 +1,161 @@
+:root {
+  --primary-color: #29aab3;
+  --text-primary-color: #83858a;
+  --text-secondary-color: #373a42;
+  --bg-primary-color: #272b34;
+}
+
+/* common classes */
+.section-img {
+  height: 500px;
+}
+/*  */
+
+body {
+  padding: 0 50px;
+  background-color: var(--bg-primary-color);
+  color: var(--text-primary-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: rgba(211, 211, 211, 0.778);
+}
+
+/* home section */
+.home-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  position: relative;
+  /* align-items: center; */
+}
+
+.home-section .content {
+  padding-top: 50px;
+}
+.home-section .title,
+.about-section .title,
+.work-section .title {
+  font-size: 65px;
+  font-weight: 800;
+  color: whitesmoke;
+}
+
+.home-section .title span,
+.about-section .title span,
+.work-section .title span {
+  color: var(--primary-color);
+}
+
+.home-section .btn {
+  padding: 8px 15px;
+  border-radius: 24px;
+  width: fit-content;
+  color: rgba(245, 245, 245, 0.831);
+}
+
+.btns {
+  display: flex;
+  gap: 30px;
+}
+
+.home-section .btn:nth-child(1) {
+  background-color: var(--primary-color);
+}
+.home-section .btn:nth-child(2) {
+  background-color: var(--text-secondary-color);
+}
+
+.scroll-down-btn {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-secondary-color);
+  bottom: 80px;
+  left: 200px;
+  font-size: 1.5rem;
+}
+
+/* about section */
+
+.about-section {
+  display: flex;
+  align-items: center;
+}
+
+.about-section .section-img {
+  height: 400px;
+}
+
+.about-section .desc {
+  width: 70%;
+}
+.about-section .desc span {
+  color: rgba(245, 245, 245, 0.686);
+}
+
+/* work section */
+
+.work-section {
+  background-image: url(images/Projects\ Pageportfolio-bg.png);
+  padding: 30px;
+  padding-bottom: 100px;
+}
+.work-section .title {
+  font-size: 48px;
+}
+
+.chip-list {
+  display: flex;
+  gap: 30px;
+}
+
+.chip {
+  padding: 5px 15px;
+  background-color: #363a4297;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.648);
+}
+
+.chip:nth-child(1) {
+  background-color: var(--primary-color);
+}
+.card-list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #363a4297;
+  width: fit-content;
+}
+.card img {
+  /* height: 150px; */
+  max-width: 200px;
+}
