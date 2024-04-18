@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        width: fit-content;
+        /* padding: 10px; */
+        border: 1px solid;
+        margin: 50px auto;
+        position: relative;
+      }
+      .box,
+      .box2 {
+        height: 400px;
+        width: 500px;
+        background-color: grey;
+        border-radius: 8px;
+        opacity: 0.3;
+        /* border-bottom-right-radius: 1000px; */
+        transition: all 300ms;
+      }
+
+      .box {
+        clip-path: polygon(0 0, 100% 0, 0 5%);
+      }
+      .wrapper:hover .box {
+        /* border-bottom-right-radius: 8px; */
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+      }
+
+      .box2 {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 5%);
+      }
+      .wrapper:hover .box2 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box"></div>
+      <div class="box2"></div>
+    </div>
+  </body>
+</html>

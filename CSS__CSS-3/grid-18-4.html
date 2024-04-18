@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        background-color: bisque;
+        display: grid;
+        /* grid-template-columns: 100px 300px 400px 200px 150px;
+        grid-template-rows: 100px 50px 30px 250px 100px; */
+
+        grid-template-columns: 50px repeat(10, 100px) 1.2fr;
+        grid-template-rows: repeat(5, 300px) repeat(5, 50px);
+      }
+      .child {
+        /* height: 100px;
+        width: 100px; */
+        background-color: yellowgreen;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">child1</div>
+      <div class="child">child2</div>
+      <div class="child">child3</div>
+      <div class="child">child4</div>
+      <div class="child">child5</div>
+      <div class="child">child6</div>
+      <div class="child">child7</div>
+      <div class="child">child8</div>
+      <div class="child">child9</div>
+      <div class="child">child10</div>
+      <div class="child">child11</div>
+      <div class="child">child12</div>
+      <div class="child">child13</div>
+      <div class="child">child14</div>
+      <div class="child">child15</div>
+      <div class="child">child16</div>
+      <div class="child">child17</div>
+      <div class="child">child18</div>
+      <div class="child">child19</div>
+      <div class="child">child20</div>
+      <div class="child">child21</div>
+      <div class="child">child22</div>
+      <div class="child">child23</div>
+      <div class="child">child24</div>
+      <div class="child">child25</div>
+    </div>
+  </body>
+</html>
