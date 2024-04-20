@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        /* font-size: 65px; */
+        /* font-size: clamp(30px, 10vw, 65px); */
+        /* width: clamp(300px, 60vw, 500px); */
+        /* min-width: 300px;
+        width: 60vw;
+        max-width: 500px; */
+        /* background-color: yellowgreen; */
+        height: 300px;
+        width: 70%;
+        background-color: yellowgreen;
+        position: relative;
+      }
+      .premium {
+        position: absolute;
+        width: 100px;
+        padding: 5px;
+        /* padding: 5px 15px; */
+        border-radius: 8px;
+        background-color: tomato;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+        /* left: 90%; */
+        left: calc(100% - 110px);
+        /* left: 511px; */
+        /* right: 10px; */
+      }
+
+      .box::after {
+        /* content: attr(data-name); */
+        content: attr(class);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" data-name="Sanjay">
+      Jay
+
+      <div class="premium">premium</div>
+    </div>
+  </body>
+</html>
