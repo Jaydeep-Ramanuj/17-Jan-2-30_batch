@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // syntax
+      //   operand1 operator operand2
+      //   a = 10
+
+      // assignment operator / comparison operator
+
+      a = 10;
+      b = 20;
+      c = '10';
+      //   equality operator , checks values
+      console.log(a == b); //false
+
+      //  strict equality operator , checks values as well as data type
+      console.log('typeof a: ' + typeof a);
+      console.log('typeof c: ' + typeof c);
+
+      console.log(a == c); //true
+      console.log(a === c); //false
+
+      // --------------
+
+      // operators: Operators are symbols which are responsible to perform some some operations
+
+      //   assignment operator
+      a = 10; //valid
+      b = 'a'; //valid
+      a = b; //valid
+
+      // --------------
+
+      //   arithmetic
+
+      //   addition (+)
+      console.log(10 + 20); //valid
+
+      c = 20;
+      d = 30;
+      console.log(c + d); //valid
+
+      //   subtraction (-)
+      console.log(10 - 20);
+      console.log(d - c);
+
+      //   multiplication (*)
+      console.log(63 * 85);
+      console.log(c * d);
+
+      //   division (/)
+      console.log(45 / 9);
+      console.log(d / c);
+
+      //   modulo (%)
+      console.log(30 % 20);
+      console.log(c % d);
+
+      //   power
+      //   console.log(10 ** 2);
+      //   console.log(10 ** 3);
+      console.log(10 ** 4);
+
+      // --------------
+
+      //   increment/decrement
+
+      console.log(c++); // will use variable then increment / decrement
+      console.log(++c); // will then increment / decrement first then use variable
+
+      c++; // post increment
+      console.log(c);
+      ++c; // pre increment
+      console.log(c);
+      c--; // post decrement
+      console.log(c);
+      --c; // post decrement
+      console.log(c);
+
+      // --------------
+
+      //   comparison
+
+      d = 35;
+      e = 78;
+
+      //   less than
+      console.log(10 < 20); //true
+      console.log(d < e); // true
+      console.log(e < d); //false
+      console.log(10 < 10); //false
+
+      //   greater than
+      console.log(10 > 20); //false
+      console.log(d > e); //false
+      console.log(e > d); //true
+      console.log(10 > 10); //false
+
+      //   less than equal to
+      console.log(10 <= 20); //true
+      console.log(10 <= 10); //true
+      console.log(10 <= 9); //false
+      console.log(d <= e); //true
+
+      //   less than equal to
+      console.log(10 >= 20); //false
+      console.log(10 >= 10); //true
+      console.log(10 >= 9); // true
+      console.log(d >= e); //false
+
+      //   logical operator
+
+      //   AND (&&): Gives true if ALL conditions are true, else false for all other case
+
+      console.log(10 < 20 && 5 < 15); // true
+      console.log(10 < 20 && 20 < 15); // false
+      console.log(25 < 20 && 5 < 15); // false
+      console.log(25 < 20 && 20 < 15); // false
+      console.log(10 < 20 && 10 > 20 && 5 == 5 && 5 == '5'); //false
+
+      //   OR (||): Gives true if any conditions are true, else false if all condition are false
+
+      console.log(10 < 20 || 10 > 20); //true
+      console.log(10 > 20 || 10 > 2); //true
+      console.log(10 > 5 || 10 > 20); //true
+      console.log(10 < 5 || 30 < 20); //false
+      console.log(10 == 20 || 10 == '10' || 10 < 10 || 5 < 5); //true
+
+      //   NOT (!): gives true if condition is false, gives false if condition is true
+
+      console.log(!(10 < 30)); //false
+      console.log(!(10 == 30)); //true
+    </script>
+  </body>
+</html>
