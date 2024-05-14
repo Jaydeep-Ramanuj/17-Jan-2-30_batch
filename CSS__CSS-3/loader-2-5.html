@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #171717;
+      }
+      .box,
+      .box2 {
+        border-radius: 50%;
+        margin: 100px auto;
+        position: relative;
+        animation-name: rotateBox;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        animation-duration: 3000ms;
+        /* background-color: yellowgreen; */
+      }
+
+      .box2 {
+        height: 100px;
+        width: 100px;
+        animation-duration: 2000ms;
+        /* background-color: tomato; */
+      }
+      .dot {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        position: absolute;
+      }
+
+      .dot1 {
+        /* background-color: violet; */
+        top: 30px;
+        left: 10px;
+      }
+      .dot2 {
+        /* background-color: tomato; */
+        top: 60px;
+        left: -5px;
+      }
+      .dot3 {
+        /* background-color: springgreen; */
+        top: 90px;
+        left: -10px;
+      }
+      .dot4 {
+        top: 50px;
+        left: -10px;
+      }
+      .dot5 {
+        top: 75px;
+        left: 3px;
+      }
+      .dot6 {
+        top: 90px;
+        left: 30px;
+      }
+
+      @keyframes rotateBox {
+        to {
+          transform: rotate(0deg);
+        }
+        from {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+      <div class="dot dot3"></div>
+      <!-- <div class="box2">
+        <div class="dot dot4"></div>
+        <div class="dot dot5"></div>
+        <div class="dot dot6"></div>
+      </div> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .box {
+        width: 200px;
+        height: 200px;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: tomato;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script>
+      let box = document.getElementsByClassName('box')[0];
+      box.innerText = 'Hello';
+      //   box.style.color = 'red';
+      //   box.style.height = '200px';
+      //   box.style.width = '200px';
+      //   box.style.backgroundColor = 'grey';
+      //   box.style.border = '5px solid blue';
+
+      box.style.cssText = `width: 200px;
+          height: 200px;
+          border-radius: 8px;
+          padding: 10px;
+          background-color: tomato;`;
+    </script>
+  </body>
+</html>

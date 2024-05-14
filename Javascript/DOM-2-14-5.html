@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        height: 300px;
+        width: 300px;
+        background-color: wheat;
+      }
+      .child {
+        height: 100px;
+        width: 100px;
+        background-color: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="parent">
+      Parent
+      <div class="child">
+        Child
+        <b>Suryadeep</b>
+      </div>
+    </div> -->
+
+    <input type="text" name="" id="name" placeholder="Enter your name" />
+
+    <button>Click here</button>
+    <script>
+      let parentEle = document.getElementsByClassName('parent')[0];
+      let childEle = document.getElementsByClassName('child')[0];
+
+      //   console.log(parentEle);
+
+      //   accessing innerText
+      //   console.log(parentEle.innerText);
+      //   console.log(childEle.innerText);
+
+      //   modifying innerText
+      //   childEle.innerText = 'Yash';
+      //   parentEle.innerText = 'Jaymit';
+
+      //   accessing innerHTML
+      //   console.log(parentEle.innerHTML);
+      //   console.log(childEle.innerHTML);
+
+      //   modifying innerHTML
+      //   childEle.innerHTML = '<i>Dhananjay</i>';
+
+      document
+        .getElementsByTagName('button')[0]
+        .addEventListener('click', () => {
+          let name = document.getElementById('name');
+          console.log(name.value);
+        });
+    </script>
+  </body>
+</html>

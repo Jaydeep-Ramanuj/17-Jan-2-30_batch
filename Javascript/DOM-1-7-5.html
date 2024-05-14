@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box" id="box-id">
+      <div class="WD">Jaymit</div>
+    </div>
+    <script>
+      console.log(document);
+      console.dir(document);
+
+      //   getElementById, selects elements using ID
+      variableUsingID = document.getElementById('box-id');
+
+      console.log(variableUsingID);
+
+      //   getElementByClassName, selects elements using class name
+      variableUsingClass = document.getElementsByClassName('box');
+      console.log(variableUsingClass);
+
+      //   getElementByTagName, selects elements tag name
+
+      variableUsingTagName = document.getElementsByTagName('div');
+      console.log(variableUsingTagName);
+
+      //   querySelector, selects elements by using CSS selectors, it gives only first element which satisfies given selectors
+
+      let variableUsingQuerySelector = document.querySelector('div');
+
+      console.log(variableUsingQuerySelector);
+
+      //   querySelector, selects elements by using CSS selectors, it gives all elements which satisfies given selectors
+
+      let variableUsingQuerySelectorALL = document.querySelectorAll('div');
+
+      console.log(variableUsingQuerySelectorALL);
+    </script>
+  </body>
+</html>
