@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box some else">Yash</div>
+
+    <script>
+      let yashEle = document.getElementsByClassName('box')[0];
+
+      //   className, it gives you class names in string format
+      let className = yashEle.className;
+      console.log(className);
+
+      let classList = yashEle.classList;
+      console.log(classList);
+
+      //   Checking if class exist or not
+      let isClassExist = yashEle.contains('else');
+      console.log(isClassExist);
+
+      console.log(yashEle.contains);
+    </script>
+  </body>
+</html>

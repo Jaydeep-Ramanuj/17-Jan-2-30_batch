@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="" alt="" />
+
+    <script>
+      let img = document.getElementsByTagName('img')[0];
+      console.log(img);
+
+      //   Accessing attribute from element
+      let imgSrcValue = img.getAttribute('src');
+      console.log(imgSrcValue);
+
+      //Setting attribute value to element
+      img.setAttribute(
+        'src',
+        'https://images.pexels.com/photos/2989628/pexels-photo-2989628.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+      );
+
+      img.setAttribute('alt', 'Image not loading');
+
+      //   Removing attribute from element
+      img.removeAttribute('alt');
+    </script>
+  </body>
+</html>
