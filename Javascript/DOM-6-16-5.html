@@ -4,10 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .jaymit {
+        background-color: lightgray;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .fancy {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all 300ms;
+      }
+
+      .fancy:hover {
+        background-color: yellowgreen;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+      button {
+        margin-top: 50px;
+      }
+    </style>
   </head>
   <body>
-    <div class="box some else">Yash</div>
-
+    <div class="box some">Yash</div>
+    <button onclick="yashEle.classList.toggle('fancy');">Click here</button>
     <script>
       let yashEle = document.getElementsByClassName('box')[0];
 
@@ -19,10 +41,16 @@
       console.log(classList);
 
       //   Checking if class exist or not
-      let isClassExist = yashEle.contains('else');
+      let isClassExist = yashEle.classList.contains('else');
       console.log(isClassExist);
 
-      console.log(yashEle.contains);
+      // Adding new class to the element
+      yashEle.classList.add('jaymit');
+
+      // Removing class from the element
+      yashEle.classList.remove('some');
+
+      // yashEle.classList.toggle('fancy');
     </script>
   </body>
 </html>

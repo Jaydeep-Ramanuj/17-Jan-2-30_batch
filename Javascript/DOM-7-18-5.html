@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">This content is already present</div>
+  </body>
+
+  <script>
+    let boxEle = document.getElementsByClassName('box')[0];
+
+    // console.log(boxEle);
+
+    // Creating element
+    let newEle1 = document.createElement('b');
+    let newEle2 = document.createElement('i');
+    console.log(newEle1);
+    console.log(newEle2);
+
+    newEle1.innerText = 'Yash';
+    newEle2.innerText = 'Jaymit';
+
+    newEle1.style.color = 'Green';
+    newEle2.style.color = 'Orange';
+
+    // appending element, when you append an element it will be added as last element as child
+    boxEle.append(newEle1);
+
+    // prepending element, when you prepend an element it will be added as first element as child
+    boxEle.prepend(newEle2);
+  </script>
+</html>

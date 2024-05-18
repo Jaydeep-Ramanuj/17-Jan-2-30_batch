@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+      .card {
+        width: 300px;
+        padding: 10px;
+        border-radius: 8px;
+        margin: 50px auto;
+        background-color: lightgrey;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all 300ms;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+      img {
+        width: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+        height: 150px;
+      }
+      .title {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="card">
+      <img
+        src="https://images.pexels.com/photos/5222558/pexels-photo-5222558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <h2 class="title">Sanjay Rathod</h2>
+      <p class="desc">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        eos?
+      </p>
+    </div> -->
+
+    <script>
+      for (let i = 0; i < 100; i++) {
+        let cardEle = document.createElement('div');
+        let imgEle = document.createElement('img');
+        let h2Ele = document.createElement('h2');
+        let pEle = document.createElement('p');
+
+        imgEle.setAttribute(
+          'src',
+          'https://images.pexels.com/photos/5222558/pexels-photo-5222558.jpeg'
+        );
+
+        cardEle.classList.add('card');
+        h2Ele.classList.add('title');
+        pEle.classList.add('desc');
+
+        h2Ele.innerText = 'Sanjay Rathod';
+        pEle.innerText =
+          'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias,eos?';
+
+        cardEle.append(imgEle);
+        cardEle.append(h2Ele);
+        cardEle.append(pEle);
+
+        console.log(cardEle);
+
+        document.body.prepend(cardEle);
+      }
+    </script>
+  </body>
+</html>
