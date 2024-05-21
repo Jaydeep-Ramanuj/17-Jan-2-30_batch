@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <input type="text" name="" id="name" placeholder="Enter your name" />
+    <button>Submit</button>
+  </body>
+
+  <script>
+    let btn = document.getElementsByTagName('button')[0];
+
+    let name = document.getElementById('name');
+    // console.log(btn);
+
+    // btn.addEventListener('click', function (event) {
+    //   //   console.log('Btn single clicked');
+    //     console.log(name.value);
+    // });
+    // btn.addEventListener('dblclick', function () {
+    //   //   console.log('Btn double clicked');
+    //   name.value = 'Jaymit OP';
+    // });
+
+    // btn.addEventListener('focus', function () {
+    //   //   console.log('Bnt focused');
+    //   btn.style.color = 'red';
+    // });
+
+    // btn.addEventListener('mouseenter', function () {
+    //   btn.style.backgroundColor = 'orange';
+    // });
+    // btn.addEventListener('mouseleave', function () {
+    //   btn.style.backgroundColor = 'brown';
+    // });
+
+    // name.addEventListener('change', function () {
+    //   console.log(name.value);
+    // });
+
+    // name.addEventListener('input', function () {
+    //   console.log(name.value);
+    // });
+
+    // document.addEventListener('keydown', function (event) {
+    //   //   console.log(event);
+    //   console.log(event.code);
+    //   //   console.log('Key pressed');
+    // });
+
+    // document.addEventListener('click', function (event) {
+    //   console.log(event);
+    // });
+
+    btn.onclick = function () {
+      console.log('Bnt clicked');
+    };
+  </script>
+</html>
