@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      person1 = 'Dhananjay';
+      friends = ['jay', 'ajay'];
+      userData = {
+        name: 'Sanjay',
+        age: 23,
+        course: 'WD',
+      };
+
+      function foo() {
+        console.log('Function foo() executed');
+      }
+
+      names = [
+        'Jaymit',
+        'Suryadeep',
+        person1,
+        963852711,
+        friends,
+        [10, 20, 30],
+        userData,
+        foo,
+      ];
+      console.log(names);
+      console.log(names[2]);
+      console.log(names[0]);
+      console.log(names[3]);
+      console.log(names[4]);
+      console.log(names[4][1]);
+      console.log(names[5]);
+      console.log(names[5][1]);
+      console.log(names[6]);
+      console.log(names[7]);
+
+      names[1] = 'Surya';
+      console.log(names);
+    </script>
+  </body>
+</html>

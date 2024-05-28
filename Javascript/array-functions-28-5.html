@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      foods = [
+        'Pizza',
+        'Burger',
+        'Dhosa',
+        'Menduvada',
+        'Idli',
+        'Vadapav',
+        'Dabeli',
+        'French Fries',
+        'Hot Dog',
+        'Pasta',
+      ];
+
+      //   console.log(foods);
+
+      console.log(foods.length);
+
+      //   --------
+      //   push()
+      //   console.log('before', foods);
+      //   foods.push('Ice cream');
+      //   console.log('After', foods);
+
+      //   --------
+      //   pop()
+      //   console.log('before', foods);
+      //   foods.pop();
+      //   console.log('After', foods);
+
+      //   --------
+      //   unshift()
+      //   console.log('before', foods);
+      //   foods.unshift('Aloo Paratha');
+      //   console.log('After', foods);
+
+      //   --------
+      //   unshift()
+      //   console.log('before', foods);
+      //   foods.shift();
+      //   console.log('After', foods);
+
+      //   --------
+      //   slice()
+      console.log(foods);
+
+      console.log(foods.slice(1, 5));
+      console.log(foods.slice(3, 7));
+      console.log(foods.slice(4));
+      console.log(foods.slice(-4));
+      console.log(foods.slice(-4, -1));
+
+      //   --------
+      //   join()
+      console.log(foods.join('--'));
+
+      //   foods.splice(5, 1, 'Masala Vadapav');
+      //   foods.splice(5, 3);
+      foods.splice(5, 3, 'Sandwich', 'Noodles', 'Hakka Noodles');
+      console.log(foods);
+    </script>
+  </body>
+</html>

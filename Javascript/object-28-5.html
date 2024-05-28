@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sing() {
+        console.log('Jay is singing');
+      }
+      petName = 'Simba';
+      userData = {
+        name: 'Jay',
+        age: 23,
+        phone: 9638527410,
+        friendList: ['Sanjay', 'Vijay', 'Ajay'],
+        petInfo: {
+          name: petName,
+          age: 3,
+          friend: 'Rocky',
+        },
+        sing: sing,
+      };
+
+      console.log(userData.name);
+      console.log(userData.phone);
+      console.log(userData.friendList[1]);
+      console.log(userData.petInfo.friend);
+      console.log(userData.sing());
+
+      console.log(userData);
+      console.bark = function () {
+        console.log('Bhua bhau');
+      };
+      console.log(console);
+
+      console.bark();
+    </script>
+  </body>
+</html>
