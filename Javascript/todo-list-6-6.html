@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .task {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+      .task input:checked + li {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" name="" id="" required placeholder="Enter your task" />
+      <button>Add task</button>
+
+      <ul class="task-list"></ul>
+    </form>
+    <script>
+      const submitBtn = document.getElementsByTagName('button')[0];
+      const inp = document.getElementsByTagName('input')[0];
+      const taskList = document.getElementsByTagName('ul')[0];
+
+      submitBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        addTask(inp.value);
+      });
+
+      function addTask(task) {
+        let newTaskDiv = document.createElement('div');
+        newTaskDiv.setAttribute('class', 'task');
+        let newCheckbox = document.createElement('input');
+        newCheckbox.setAttribute('type', 'checkbox');
+        let newTask = document.createElement('li');
+        newTask.textContent = task;
+
+        newTaskDiv.append(newCheckbox);
+        newTaskDiv.append(newTask);
+        taskList.append(newTaskDiv);
+      }
+    </script>
+  </body>
+</html>

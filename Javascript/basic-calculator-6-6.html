@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="inp1">Number 1</label
+      ><input type="number" name="" id="inp1" /> <br /><label for="inp2"
+        >Number 2</label
+      >
+      <input type="number" name="" id="inp2" />
+      <div id="result"></div>
+      <br /><button id="sum">+</button><button id="sub">-</button
+      ><button id="mul">*</button><button id="div">/</button
+      ><button id="modulo">%</button>
+    </form>
+    <script>
+      const inp1 = document.getElementById('inp1');
+      const inp2 = document.getElementById('inp2');
+      const output = document.getElementById('result');
+
+      const sumBtn = document.getElementById('sum');
+      const subBtn = document.getElementById('sub');
+      const mulBtn = document.getElementById('mul');
+      const divBtn = document.getElementById('div');
+      const moduloBtn = document.getElementById('modulo');
+
+      sumBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        output.textContent = sum(Number(inp1.value), Number(inp2.value));
+      });
+      subBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        output.textContent = sub(Number(inp1.value), Number(inp2.value));
+      });
+      mulBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        output.textContent = mul(Number(inp1.value), Number(inp2.value));
+      });
+      divBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        output.textContent = div(Number(inp1.value), Number(inp2.value));
+      });
+      moduloBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        output.textContent = modulo(Number(inp1.value), Number(inp2.value));
+      });
+
+      function sum(num1, num2) {
+        return num1 + num2;
+      }
+      function sub(num1, num2) {
+        return num1 - num2;
+      }
+      function mul(num1, num2) {
+        return num1 * num2;
+      }
+      function div(num1, num2) {
+        return num1 / num2;
+      }
+      function modulo(num1, num2) {
+        return num1 % num2;
+      }
+
+      //   console.log(sum(10, 20));
+      //   console.log(sub(10, 20));
+      //   console.log(mul(10, 20));
+      //   console.log(div(10, 20));
+      //   console.log(modulo(10, 20));
+
+      console.log(eval('10+20'));
+    </script>
+  </body>
+</html>

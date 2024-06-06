@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+      .card {
+        width: 300px;
+        padding: 10px;
+        border-radius: 8px;
+        margin: 50px auto;
+        background-color: lightgrey;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all 300ms;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+      img {
+        width: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+        height: 150px;
+      }
+      .title {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      data = [
+        {
+          first_name: 'Tabina',
+          title: 'Software Engineer I',
+          img_url: 'http://dummyimage.com/201x100.png/ff4444/ffffff',
+          desc: 'Nondisp fx of low epiphy (separation) of unsp femr, 7thM',
+        },
+        {
+          first_name: 'Loni',
+          title: 'Professor',
+          img_url: 'http://dummyimage.com/165x100.png/ff4444/ffffff',
+          desc: 'Laceration of extn/abdr musc/fasc/tend of thmb at forarm lv',
+        },
+        {
+          first_name: 'Irwinn',
+          title: 'Research Assistant III',
+          img_url: 'http://dummyimage.com/228x100.png/cc0000/ffffff',
+          desc: 'Contus/lac/hem brainstem w LOC of 6-24 hrs, sequela',
+        },
+        {
+          first_name: 'Sherrie',
+          title: 'Programmer II',
+          img_url: 'http://dummyimage.com/131x100.png/cc0000/ffffff',
+          desc: 'Oth extrartic fracture of lower end of unsp radius, sequela',
+        },
+        {
+          first_name: 'Addie',
+          title: 'Account Representative II',
+          img_url: 'http://dummyimage.com/186x100.png/5fa2dd/ffffff',
+          desc: 'Fall into swim pool strk surfc causing oth injury, sequela',
+        },
+        {
+          first_name: 'Noelani',
+          title: 'Research Assistant IV',
+          img_url: 'http://dummyimage.com/164x100.png/cc0000/ffffff',
+          desc: 'Displ commnt fx shaft of humer, r arm, 7thG',
+        },
+        {
+          first_name: 'Rennie',
+          title: 'Recruiter',
+          img_url: 'http://dummyimage.com/100x100.png/dddddd/000000',
+          desc: 'Poisoning by intravenous anesthetics, undetermined, init',
+        },
+        {
+          first_name: 'Zacharie',
+          title: 'Clinical Specialist',
+          img_url: 'http://dummyimage.com/161x100.png/ff4444/ffffff',
+          desc: 'Pneumococcal arthritis, unspecified elbow',
+        },
+        {
+          first_name: 'Kris',
+          title: 'Media Manager II',
+          img_url: 'http://dummyimage.com/200x100.png/ff4444/ffffff',
+          desc: 'Sprain of interphalangeal joint of right index finger, init',
+        },
+        {
+          first_name: 'Jaquelyn',
+          title: 'Compensation Analyst',
+          img_url: 'http://dummyimage.com/106x100.png/ff4444/ffffff',
+          desc: 'Embolism and thrombosis of inferior vena cava',
+        },
+        {
+          first_name: 'Kaila',
+          title: 'Teacher',
+          img_url: 'http://dummyimage.com/234x100.png/dddddd/000000',
+          desc: 'Striking against other object with subsequent fall, sequela',
+        },
+        {
+          first_name: 'Dene',
+          title: 'Cost Accountant',
+          img_url: 'http://dummyimage.com/163x100.png/dddddd/000000',
+          desc: 'Unspecified injury of unspecified thigh, sequela',
+        },
+        {
+          first_name: 'Terrell',
+          title: 'Geological Engineer',
+          img_url: 'http://dummyimage.com/231x100.png/dddddd/000000',
+          desc: 'Other fracture of unspecified femur',
+        },
+        {
+          first_name: 'Maribel',
+          title: 'Database Administrator IV',
+          img_url: 'http://dummyimage.com/235x100.png/5fa2dd/ffffff',
+          desc: 'Displ spiral fx shaft of rad, l arm, 7thN',
+        },
+        {
+          first_name: 'Kate',
+          title: 'Structural Engineer',
+          img_url: 'http://dummyimage.com/177x100.png/5fa2dd/ffffff',
+          desc: 'Osteochondropathy, unspecified of hand',
+        },
+        {
+          first_name: 'Price',
+          title: 'Accountant III',
+          img_url: 'http://dummyimage.com/216x100.png/cc0000/ffffff',
+          desc: 'Crushed chest, sequela',
+        },
+        {
+          first_name: 'Lenee',
+          title: 'Chemical Engineer',
+          img_url: 'http://dummyimage.com/160x100.png/ff4444/ffffff',
+          desc: 'Disorder of external ear, unspecified, bilateral',
+        },
+        {
+          first_name: 'Carmen',
+          title: 'Structural Engineer',
+          img_url: 'http://dummyimage.com/177x100.png/ff4444/ffffff',
+          desc: 'Burn of second degree of unspecified palm',
+        },
+        {
+          first_name: 'Jermain',
+          title: 'Programmer III',
+          img_url: 'http://dummyimage.com/213x100.png/5fa2dd/ffffff',
+          desc: 'Adverse effect of ganglionic blocking drugs, init encntr',
+        },
+        {
+          first_name: 'Pail',
+          title: 'Marketing Manager',
+          img_url: 'http://dummyimage.com/222x100.png/ff4444/ffffff',
+          desc: 'Poisoning by oth antiprotozoal drugs, accidental',
+        },
+        {
+          first_name: 'Garvy',
+          title: 'Software Consultant',
+          img_url: 'http://dummyimage.com/190x100.png/ff4444/ffffff',
+          desc: 'Nonrheumatic mitral (valve) stenosis',
+        },
+        {
+          first_name: 'Micheline',
+          title: 'Paralegal',
+          img_url: 'http://dummyimage.com/226x100.png/dddddd/000000',
+          desc: 'Nondisp fx of body of scapula, r shldr, 7thK',
+        },
+        {
+          first_name: 'Eddie',
+          title: 'Mechanical Systems Engineer',
+          img_url: 'http://dummyimage.com/180x100.png/ff4444/ffffff',
+          desc: 'Nondisplaced fracture of sternal end of left clavicle',
+        },
+        {
+          first_name: 'Francklyn',
+          title: 'Research Nurse',
+          img_url: 'http://dummyimage.com/221x100.png/5fa2dd/ffffff',
+          desc: 'Nondisp fx of dist phalanx of l thm, 7thD',
+        },
+        {
+          first_name: 'Siana',
+          title: 'Office Assistant III',
+          img_url: 'http://dummyimage.com/144x100.png/ff4444/ffffff',
+          desc: 'Displ transverse fx l patella, subs for clos fx w malunion',
+        },
+        {
+          first_name: 'Roshelle',
+          title: 'Financial Analyst',
+          img_url: 'http://dummyimage.com/229x100.png/dddddd/000000',
+          desc: 'Idiopathic chronic gout, unspecified knee',
+        },
+        {
+          first_name: 'Upton',
+          title: 'Budget/Accounting Analyst I',
+          img_url: 'http://dummyimage.com/189x100.png/ff4444/ffffff',
+          desc: 'Displacement of indwelling ureteral stent, subs',
+        },
+        {
+          first_name: 'Ranique',
+          title: 'Account Representative III',
+          img_url: 'http://dummyimage.com/206x100.png/cc0000/ffffff',
+          desc: 'Struck by object due to collapse of building, init encntr',
+        },
+        {
+          first_name: 'Larisa',
+          title: 'Computer Systems Analyst III',
+          img_url: 'http://dummyimage.com/109x100.png/5fa2dd/ffffff',
+          desc: 'Burn unsp deg mult right fingers (nail), not inc thumb, init',
+        },
+        {
+          first_name: 'Kincaid',
+          title: 'Compensation Analyst',
+          img_url: 'http://dummyimage.com/184x100.png/5fa2dd/ffffff',
+          desc: 'Sprain of metatarsophalangeal joint of unsp great toe, subs',
+        },
+        {
+          first_name: 'Kingsly',
+          title: 'Web Developer II',
+          img_url: 'http://dummyimage.com/200x100.png/dddddd/000000',
+          desc: 'Unspecified viral hepatitis C with hepatic coma',
+        },
+        {
+          first_name: 'Suzette',
+          title: 'Database Administrator I',
+          img_url: 'http://dummyimage.com/107x100.png/ff4444/ffffff',
+          desc: 'Disp fx of l ulna styloid pro, 7thN',
+        },
+        {
+          first_name: 'Vittoria',
+          title: 'Human Resources Manager',
+          img_url: 'http://dummyimage.com/110x100.png/dddddd/000000',
+          desc: 'Unsp mtrcy rider injured in clsn w pedl cyc nontraf, subs',
+        },
+        {
+          first_name: 'Fletch',
+          title: 'Administrative Assistant II',
+          img_url: 'http://dummyimage.com/225x100.png/5fa2dd/ffffff',
+          desc: 'Disp fx of navicular of right foot, subs for fx w nonunion',
+        },
+        {
+          first_name: 'Warden',
+          title: 'Occupational Therapist',
+          img_url: 'http://dummyimage.com/244x100.png/dddddd/000000',
+          desc: 'Nondisp fx of lesser trochanter of right femur, sequela',
+        },
+        {
+          first_name: 'Dyan',
+          title: 'Quality Control Specialist',
+          img_url: 'http://dummyimage.com/158x100.png/ff4444/ffffff',
+          desc: 'Blister (nonthermal) of scalp, initial encounter',
+        },
+        {
+          first_name: 'Link',
+          title: 'Human Resources Assistant I',
+          img_url: 'http://dummyimage.com/151x100.png/dddddd/000000',
+          desc: 'Triplet pregnancy with two or more monochorionic fetuses',
+        },
+        {
+          first_name: 'Kennie',
+          title: 'Community Outreach Specialist',
+          img_url: 'http://dummyimage.com/197x100.png/ff4444/ffffff',
+          desc: 'Oth intartic fracture of lower end of left radius, init',
+        },
+        {
+          first_name: 'Tracee',
+          title: 'Office Assistant II',
+          img_url: 'http://dummyimage.com/151x100.png/5fa2dd/ffffff',
+          desc: 'Nondisp fx of med epicondyl of l humer, 7thD',
+        },
+        {
+          first_name: 'Valentino',
+          title: 'Sales Associate',
+          img_url: 'http://dummyimage.com/198x100.png/cc0000/ffffff',
+          desc: 'Torus fx lower end of left radius, subs for fx w delay heal',
+        },
+        {
+          first_name: 'Ernestus',
+          title: 'Programmer Analyst I',
+          img_url: 'http://dummyimage.com/220x100.png/cc0000/ffffff',
+          desc: 'Nondisp fx of less trochanter of unsp femr, 7thJ',
+        },
+        {
+          first_name: 'Victoria',
+          title: 'Assistant Professor',
+          img_url: 'http://dummyimage.com/116x100.png/5fa2dd/ffffff',
+          desc: 'Path fx in neopltc disease, l hand, subs for fx w nonunion',
+        },
+        {
+          first_name: 'Muffin',
+          title: 'Programmer I',
+          img_url: 'http://dummyimage.com/210x100.png/dddddd/000000',
+          desc: 'Round hole of retina without detachment',
+        },
+        {
+          first_name: 'Maible',
+          title: 'Research Assistant I',
+          img_url: 'http://dummyimage.com/179x100.png/ff4444/ffffff',
+          desc: 'Sltr-haris Type II physl fx upper end rad, right arm, init',
+        },
+        {
+          first_name: 'Allyson',
+          title: 'Librarian',
+          img_url: 'http://dummyimage.com/160x100.png/ff4444/ffffff',
+          desc: 'Injury of other cranial nerves, unsp side, subs encntr',
+        },
+        {
+          first_name: 'Morgan',
+          title: 'VP Accounting',
+          img_url: 'http://dummyimage.com/167x100.png/cc0000/ffffff',
+          desc: 'Fall from moving wheelchair (powered), subsequent encounter',
+        },
+        {
+          first_name: 'Bee',
+          title: 'Geologist III',
+          img_url: 'http://dummyimage.com/243x100.png/dddddd/000000',
+          desc: 'Frostbite w tissue necrosis of left knee and lower leg, init',
+        },
+        {
+          first_name: 'Benjamen',
+          title: 'Electrical Engineer',
+          img_url: 'http://dummyimage.com/135x100.png/ff4444/ffffff',
+          desc: 'Chronic gout due to renal impairment, right hand, w tophus',
+        },
+        {
+          first_name: 'Tomas',
+          title: 'Assistant Media Planner',
+          img_url: 'http://dummyimage.com/100x100.png/5fa2dd/ffffff',
+          desc: 'Toxic effect of venom of black widow spider, undet, init',
+        },
+        {
+          first_name: 'Domenico',
+          title: 'Electrical Engineer',
+          img_url: 'http://dummyimage.com/235x100.png/cc0000/ffffff',
+          desc: 'Fluency disorder following unsp cerebrovascular disease',
+        },
+      ];
+
+      for (let i = 0; i < data.length; i++) {
+        cardMaker(data[i].first_name, data[i].img_url, data[i].desc);
+      }
+      function cardMaker(name, imgUrl, desc) {
+        let cardEle = document.createElement('div');
+        let imgEle = document.createElement('img');
+        let h2Ele = document.createElement('h2');
+        let pEle = document.createElement('p');
+
+        imgEle.setAttribute('src', imgUrl);
+
+        cardEle.classList.add('card');
+        h2Ele.classList.add('title');
+        pEle.classList.add('desc');
+
+        h2Ele.innerText = name;
+        pEle.innerText = desc;
+
+        cardEle.append(imgEle);
+        cardEle.append(h2Ele);
+        cardEle.append(pEle);
+
+        //   console.log(cardEle);
+
+        document.body.prepend(cardEle);
+      }
+    </script>
+  </body>
+</html>
