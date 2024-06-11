@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log(window);
+
+      function getCurrentLocation() {
+        window.navigator.geolocation.getCurrentPosition((data) => {
+          console.log(data);
+        });
+      }
+
+      //   getCurrentLocation();
+
+      function getClipBoardText() {
+        window.navigator.clipboard.readText().then((data) => {
+          console.log(data);
+        });
+      }
+
+      getClipBoardText();
+    </script>
+  </body>
+</html>
