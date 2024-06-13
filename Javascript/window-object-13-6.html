@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="close">Close</button>
+    <button id="open">Open</button>
+    <script>
+      name = 'yash';
+      console.log(window);
+      //   window.alert('hey');
+
+      function foo() {
+        console.log('Function foo()');
+      }
+
+      //   window.document.getElementById();
+
+      let closeBtn = document.getElementById('close');
+      let openBtn = document.getElementById('open');
+      console.log(closeBtn);
+
+      closeBtn.addEventListener('click', () => {
+        window.close();
+      });
+      openBtn.addEventListener('click', () => {
+        window.open(
+          'https://www.google.com/',
+          '_blank',
+          'height= 300px,width=300px'
+        );
+      });
+
+      window.setTimeout(() => {
+        console.log('Hello Yash');
+      }, 3000);
+
+      let isDarkMode = false;
+      //   let blink = window.setInterval(() => {
+      //     if (isDarkMode) {
+      //       document.body.style.backgroundColor = 'red';
+      //     } else {
+      //       document.body.style.backgroundColor = 'blue';
+      //     }
+      //     isDarkMode = !isDarkMode;
+      //   }, 100);
+
+      //   setTimeout(() => {
+      //     clearInterval(blink);
+      //   }, 3000);
+
+      window.localStorage.setItem('name', 'yash');
+
+      document.cookie = 'name:yash';
+    </script>
+  </body>
+</html>

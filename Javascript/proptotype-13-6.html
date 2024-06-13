@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      number = [10, 20, 30, 40, 50];
+      console.log(number);
+
+      str = 'This is some string. Something.';
+
+      function getLastTwoElements() {}
+
+      //   console.log(getLastTwoElements());
+
+      //   console.log(str.indexOf('i', 3));
+      //   console.log(str.lastIndexOf('i'));
+
+      chars = ['a', 'b', 'c', 'd', 'e'];
+
+      Array.prototype.lastTwoItems = function () {
+        return [this.at(-2) ** 2, this.at(-1) ** 2];
+      };
+
+      console.log(number.lastTwoItems());
+
+      console.log(Array.prototype.lastTwoItems);
+
+      console.log(console);
+
+      console.name = 'jay';
+    </script>
+  </body>
+</html>
