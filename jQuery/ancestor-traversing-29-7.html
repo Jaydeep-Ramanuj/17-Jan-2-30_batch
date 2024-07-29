@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        padding: 30px;
+        background-color: lightgray;
+      }
+      .child {
+        padding: 10px;
+        background-color: lightskyblue;
+      }
+      .sub-child {
+        padding: 20px;
+        background-color: rgba(255, 99, 71, 0.5);
+      }
+      .sub-sub-child {
+        padding: 20px;
+        background-color: rgba(165, 42, 42, 0.463);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      Parent
+      <div class="child">
+        Child
+        <div class="sub-child">
+          Sub-child
+          <div class="sub-sub-child">Sub-sub-child</div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const subSubChild = $('.sub-sub-child');
+      console.log(subSubChild);
+
+      console.log(subSubChild.parent());
+      console.log(subSubChild.parents());
+      console.log(subSubChild.parentsUntil('html'));
+    </script>
+  </body>
+</html>

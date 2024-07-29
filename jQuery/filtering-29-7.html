@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">child 1</div>
+      <div class="child">child 2</div>
+      <div class="child">child 3</div>
+      <div class="child">child 4</div>
+      <div class="child">child 5</div>
+      <p>This is p tag</p>
+      <p class="c">This is p tag with c class</p>
+      <p id="i">This is p tag with i id</p>
+      <div>This is div tag</div>
+      <div class="c">This is div tag with c class</div>
+      <div class="i">This is div tag with i id</div>
+      <h2>This is h2 tag</h2>
+      <h3>This is h3 tag</h3>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      const parent = $('.parent');
+      const pTag = $('p');
+      const children = $('.child');
+      //   console.log(pTag);
+      //   console.log(children);
+
+      //   console.log(parent.first());
+      //   console.log(pTag.first());
+      //   console.log(pTag.last());
+
+      //   console.log(children.first());
+      //   console.log(children.last());
+      //   console.log(children.eq(2));
+
+      console.log(parent.children());
+      //   console.log(parent.children().filter('div.child'));
+      console.log(parent.children().not('p'));
+    </script>
+  </body>
+</html>
